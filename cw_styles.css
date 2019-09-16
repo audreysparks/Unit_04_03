@@ -22,6 +22,9 @@ body{
    font-family: Verdana, Geneva, sans-serif
 }
 h1{
+   color: black
+}
+h1{
    font-weight: normal
 }
 h2{
@@ -38,43 +41,55 @@ footer{
    padding-top: 1px;
    padding-bottom: 1px
 }
+/* These elements set up the structure
+ of the page to make it have the titles to be a certain
+  weight and color. */
 
 /* Body Header Styles */
 body > header{
    background-color: rgb(97, 97, 211)
 }
+
 body > header > h1 {
    font-size: 4vw;
    color: rgb(255, 255, 255, 0.8);
-   font-family: Limelight, cursive;
+   font-family: 'Limelight', cursive;
    margin: 0px;
 }
-h1 > span > body{
+h1 > span, body header{
    color: rgba(255, 255, 255, 0.4)
 }
+/* These elements set up the header
+ titles (the color and weight). */
 
 /* Navigation Styles */
-#mainLinks  nav {
+   nav{
    padding-top: 5px;
    padding-bottom: 5px
+}
+nav a:link, nav a:visited{
+   color: white
 }
 
  nav a:hover, nav a:active{
    opacity: 0.8;
    background-color: rgba(51,51,51, 0.5);
-   color: white
+   color: white;
 }
+/* These elements made the nav bar be a certain color
+ while viewing
+ it and a certain color when you press it. */
 
 /* Outline Styles */
-nav#outLine{
+nav{
    color: rgb(51,51,51);
    font-size: 0.8em;
    text-align: left
 }
- nav#outLine>h1{
+ nav>h1{
     text-align: center
  }
-nav#outLine> ol{
+nav>ol{
    line-height: 2em;
    margin-top: 0px;
    margin-bottom: 0px;
@@ -82,17 +97,22 @@ nav#outLine> ol{
    margin-right: 5px; 
    list-style-type: upper-roman
 }
-nav#outLine > ol > ol{
+nav#outLine> ol, ol{
    list-style-type: upper-alpha
 }
-nav#outLine a:link, nav#outline a:hover{
+nav#outline a:link, nav#outline a:visited{
    color: rgba(101, 101, 101)
 }
 
-nav#outLine a:visited, nav#outline a:hover{
+nav#outline a:active, nav#outline a:hover{
    color: rgb( 97,97, 211);
    text-decoration: underline;
 }
+
+/* These elements set up the side nav bar 
+so that the main points
+were in roman order and the elements 
+inside it were in alpha. */
 
 /* Section Styles */
 section{
@@ -102,6 +122,10 @@ section header h1{
    font-size: 2.2em;
    padding-left: 10px
 }
+
+/* These elements were to make
+ the section a certain size and color. */
+ 
 /* Article Styles */
 article h2{
    font-size: 1.4em
@@ -110,7 +134,7 @@ article#p:first-of-type::first-line{
    font-size: 2em;
    vertical-align: baseline
 }
-
+/* These elements were to make the article a certain size. */
 
 
 /* Aside Styles */
@@ -121,3 +145,4 @@ aside h1{
    font-size: 1.4em;
    text-align: center
 }
+/* These elements were to make the aside a certain size. */
